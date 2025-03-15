@@ -1,0 +1,134 @@
+.accordion-button {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #444;
+    color: #ffcc00;
+}
+
+.accordion-button:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+.accordion-body {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-dark {
+    background-color: #333;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    flex-grow: 1;
+}
+
+.table-dark th,
+.table-dark td {
+    border-color: #444;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-dark th {
+    background-color: #444;
+    color: #ffcc00;
+}
+
+.table-dark tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+}
+
+/* Specific rule for the "Naprawy" button */
+#headingOne .accordion-button,
+#headingTwo .accordion-button {
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-size: 20px;
+}
+
+#headingOne .accordion-button:not(.collapsed),
+#headingTwo .accordion-button:not(.collapsed) {
+    color: rgb(252, 72, 72);
+    transition: 0.2s ease;
+    text-shadow: 0px 0px 5px rgb(17, 11, 11);
+    background-color: rgb(0, 0, 0);
+}
+
+#headingOne .accordion-button:hover,
+#headingTwo .accordion-button:hover {
+    background-color: rgba(0, 0, 0, 0.945);
+}
+
+/* Change the color of the arrows in the accordion buttons to white */
+.accordion-button::after {
+    filter: invert(1);
+}
+
+/* Change the color of the arrows to red when the button is expanded */
+.accordion-button:not(.collapsed)::after {
+    filter: invert(0) sepia(100%) saturate(10000%) hue-rotate(0deg) brightness(1400%);
+}
+
+.accordion-body {
+    padding: 0px !important;
+    margin: 0px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.table-dark {
+    flex-grow: 1;
+    /* Ensure the table grows to fill the available space */
+}
+
+h2 {
+    scale: 1.0 !important;
+}
+
+@media (max-width: 1399px) {
+    h2 {
+        margin-top: 0px !important;
+    }
+
+    .accordion-button {
+        margin-bottom: 0;
+    }
+
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        border-bottom: 1px solid #444;
+    }
+
+    .accordion-button.collapsed {
+        border-bottom: 1px solid #444;
+    }
+}
+
+.table {
+    flex-grow: 1 !important;
+    margin-bottom: 0 !important;
+    /* Usunięcie marginesu dolnego */
+}
