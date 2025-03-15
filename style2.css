@@ -57,16 +57,28 @@ body {
     background-color: rgb(12, 12, 12);
 }
 
-/* Specific rule for the "Naprawy" button */
+/* Specific rule for the accordion buttons */
 #headingOne .accordion-button,
-#headingTwo .accordion-button {
+#headingTwo .accordion-button,
+#headingThree .accordion-button,
+#headingFour .accordion-button,
+#headingFive .accordion-button,
+#headingSix .accordion-button,
+#headingSeven .accordion-button,
+#headingEight .accordion-button {
     background-color: rgb(12, 12, 12);
     color: white;
     font-size: 20px;
 }
 
 #headingOne .accordion-button:not(.collapsed),
-#headingTwo .accordion-button:not(.collapsed) {
+#headingTwo .accordion-button:not(.collapsed),
+#headingThree .accordion-button:not(.collapsed),
+#headingFour .accordion-button:not(.collapsed),
+#headingFive .accordion-button:not(.collapsed),
+#headingSix .accordion-button:not(.collapsed),
+#headingSeven .accordion-button:not(.collapsed),
+#headingEight .accordion-button:not(.collapsed) {
     color: rgb(252, 72, 72);
     transition: 0.2s ease;
     text-shadow: 0px 0px 5px rgb(17, 11, 11);
@@ -74,7 +86,13 @@ body {
 }
 
 #headingOne .accordion-button:hover,
-#headingTwo .accordion-button:hover {
+#headingTwo .accordion-button:hover,
+#headingThree .accordion-button:hover,
+#headingFour .accordion-button:hover,
+#headingFive .accordion-button:hover,
+#headingSix .accordion-button:hover,
+#headingSeven .accordion-button:hover,
+#headingEight .accordion-button:hover {
     background-color: rgba(0, 0, 0, 0.945);
 }
 
