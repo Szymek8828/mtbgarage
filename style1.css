@@ -111,6 +111,10 @@ body {
         margin-bottom: 10px;
     }
 
+    article {
+        margin: 15px 0 !important;
+    }
+
 }
 
 @media(max-width:767px) {
@@ -184,6 +188,30 @@ body {
     h2 {
         margin-top: 10px !important;
     }
+
+    #art4 h2 {
+        margin-top: -5px !important;
+
+        margin-bottom: 15px !important;
+
+    }
+
+    #art2 h2 {
+        margin-top: 10px !important;
+        /* Adjust as needed for equal spacing */
+        margin-bottom: 10px !important;
+    }
+
+    #art1 h2 {
+        margin-top: 10px !important;
+        /* Adjust as needed for equal spacing */
+        margin-bottom: 10px !important;
+    }
+
+    #art3 h2 {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
 }
 
 @media(max-width: 1000px) and (min-width:767px) {
@@ -212,8 +240,8 @@ body {
 
 article {
     max-width: 300px;
-    margin: 10px;
 
+    /* Ensure consistent vertical spacing between articles */
 }
 
 main {
@@ -361,6 +389,11 @@ p {
         height: 100%;
         /* Ensure the container takes full height */
     }
+
+    h2 {
+        margin-bottom: 15px !important;
+    }
+
 }
 
 @media (max-width: 1399px) {
@@ -457,34 +490,10 @@ p {
 
 #art3 h2 {
     text-align: center;
-    margin-bottom: 20px;
     /* Adjust as needed */
 }
 
 
-#art4 h2 {
-    margin-top: -5px !important;
-    /* Adjust as needed for equal spacing */
-    margin-bottom: 15px !important;
-    /* Adjust as needed for equal spacing */
-}
-
-#art2 h2 {
-    margin-top: 10px !important;
-    /* Adjust as needed for equal spacing */
-    margin-bottom: 10px !important;
-}
-
-#art1 h2 {
-    margin-top: 10px !important;
-    /* Adjust as needed for equal spacing */
-    margin-bottom: 10px !important;
-}
-
-#art3 h2 {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
-}
 
 .styled-link {
     color: #4682b4;
