@@ -320,7 +320,7 @@ main {
     height: 100%;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.664);
     text-align: center;
     margin-left: 0;
     margin-bottom: 1px;
@@ -457,7 +457,7 @@ p {
 #art3,
 #art4 {
     color: rgb(246, 66, 57);
-    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
 
 }
 
