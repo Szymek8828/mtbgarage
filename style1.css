@@ -1,0 +1,659 @@
+/* * {
+    margin: 0px;
+} */
+
+/* body {
+    background-color: #111;
+
+} */
+header {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 1px 2px white;
+    transition: box-shadow 0.15s ease;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    max-height: 70px;
+    width: auto;
+    position: relative;
+    bottom: 15px;
+    z-index: 2;
+    transition: filter 0.3s ease;
+}
+
+.fixed-top {
+    height: 80px;
+    z-index: 1030;
+    width: 100%;
+}
+
+#burger-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 1040;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#burger-btn .navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.nav-list {
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.95);
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+}
+
+.nav-list li {
+    padding: 15px;
+    list-style: none;
+}
+
+.nav-list a:hover {
+    text-shadow: 0px 0px 1px rgb(255, 255, 255);
+    scale: 1.02;
+    transition: ease 0.12s;
+    color: rgb(255, 255, 255);
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+@media (min-width:768px) {
+    #burger-btn {
+        display: block;
+    }
+
+    .nav-list.active+#burger-btn {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .nav-list li {
+        padding: 0 15px;
+
+    }
+
+    #artAll article {
+        width: 70vw;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media(max-width:767px) {
+    .logo {
+        top: 2px;
+        left: -15px;
+        height: 50px;
+    }
+
+    .nav-list li {
+        border-bottom: 1px solid white;
+
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav-list li a {
+        font-size: 22px;
+    }
+
+    .nav-list li:hover {
+        border-bottom: red 2px solid;
+    }
+
+    .nav-list {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #art1,
+    #art2,
+    #art3,
+    #art4 {
+        margin: 10px;
+
+    }
+
+    .contact-link {
+        display: flex;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .contact-link ion-icon {
+        margin-right: 8px;
+        vertical-align: middle;
+        /* Ensure the icon is vertically centered */
+    }
+
+    #art4 p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+}
+
+@media (min-width:1399px) {
+    h2 {
+        scale: 0.9;
+    }
+}
+
+@media (max-width:1398px) and (min-width:900px) {
+    h2 {
+        scale: 0.8;
+    }
+
+
+}
+
+@media (max-width:899px) and (min-width:768px) {
+    h2 {
+        scale: 0.8;
+    }
+}
+
+@media(max-width:767px) {
+    h2 {
+        scale: 0.9;
+    }
+}
+
+@media (max-width:1400px) {
+
+    #art1 p,
+    #art2 p,
+    #art3 p {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h2 {
+        margin-top: 10px !important;
+    }
+}
+
+@media(max-width: 1000px) and (min-width:767px) {
+    .logo {
+        left: -30px;
+        max-height: 50px;
+    }
+
+    .nav-list a {
+
+        font-size: 18px;
+    }
+}
+
+@media(min-width:1000px) {
+    .nav-list {
+        margin-top: -3px;
+    }
+}
+
+@media (max-width:1000px) and (min-width:992px) {
+    .logo {
+        left: 0px;
+    }
+}
+
+article {
+    max-width: 300px;
+    margin: 10px;
+
+}
+
+main {
+
+    background: rgb(12, 12, 12);
+    margin-top: 70px;
+    flex-grow: 1;
+    transition: filter 0.3s ease;
+    font-family: 'Segoe UI';
+
+}
+
+#art1 {
+    margin-top: -10px;
+
+}
+
+.nav-list.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    background-color: #000;
+    height: 200%;
+    width: 340px;
+    padding-top: 60px;
+    color: white;
+    margin: 0;
+    /* box-shadow: 0px 0px 2px white; */
+    opacity: 83.5%;
+    z-index: 1;
+    padding-top: 110px;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media(min-width: 1600px) {
+
+    .fixed-top {
+        height: 80px;
+    }
+
+    .logo {
+        max-height: 70px;
+        position: relative;
+        right: 7vw;
+        bottom: 15px;
+    }
+
+    .menuMobilne {
+        position: relative;
+        left: 5vw;
+        bottom: 0px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .nav-list a {
+
+        font-size: 20px;
+    }
+
+
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 1px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.ikonaMenu,
+.ikona2Menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    color: white;
+    z-index: 4;
+    /* Zablokowanie interakcji z ukrytą ikoną */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ikona2Menu {
+    visibility: hidden;
+}
+
+.ikonaMenu {
+    visibility: visible;
+}
+
+p {
+    text-align: justify;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+    text-shadow: none;
+    margin-bottom: 1px;
+}
+
+@media (min-width: 1400px) {
+
+    .slider-container,
+    #map {
+        height: 100%;
+        /* Ensure the container takes full height */
+    }
+}
+
+@media (max-width: 1399px) {
+
+    .slider-container,
+    #map {
+        height: 250px;
+        /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+
+    .slider-container,
+    #map {
+        height: 250px;
+        order: -1;
+        /* Move map and slider above text on smaller screens */
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .slider-container,
+    #map {
+        height: 180px !important;
+        /* Adjust height for smallest screens */
+    }
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    color: rgb(176, 176, 176);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: right;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 50px;
+    padding-right: 10px;
+}
+
+@media (max-width: 500px) {
+    footer {
+        font-size: 13px;
+        /* Smaller font size for smaller screens */
+        padding-top: 50px;
+        /* Keep padding for alignment */
+        padding-right: 10px;
+        /* Keep right padding for alignment */
+        margin-bottom: 0px !important;
+    }
+
+    #art4 {
+        margin-bottom: -39px !important;
+    }
+}
+
+p {
+    color: rgb(238, 238, 238);
+    text-shadow: 0px 0px 2px black;
+}
+
+#art1,
+#art2,
+#art3,
+#art4 {
+    color: rgb(246, 66, 57);
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+
+}
+
+#art4 {
+    margin-bottom: -0px;
+    /* Reduce spacing between #art4 and footer */
+}
+
+#art4 h2 {
+    margin-top: -10px !important;
+    margin-bottom: 10px;
+}
+
+.custom-shadow {
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.541);
+
+}
+
+@media(max-width:1399px) {
+    .slider-container {
+        height: 250px;
+
+    }
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+#art3 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Adjust as needed */
+}
+
+.styled-link {
+    color: #4682b4;
+    /* DodgerBlue for unvisited links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.styled-link:hover {
+    color: rgba(40, 250, 250, 0.815) !important;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.styled-link:visited {
+    color: #4682b4;
+    /* SteelBlue for visited links */
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 12px 24px;
+    /* Slightly larger padding */
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+    transform: scale(1.05);
+}
+
+.contact-link.facebook {
+    background-color: #3b5998;
+}
+
+.contact-link.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.contact-link.gmail {
+    background-color: #D44638;
+    background-image: linear-gradient(45deg, #D44638, #FF6F61);
+}
+
+.contact-link ion-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    /* Ensure the icon is vertically centered */
+}
+
+@media (max-width: 767px) {
+    .contact-link {
+        display: flex;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .contact-link ion-icon {
+        margin-right: 8px;
+        vertical-align: middle;
+        /* Ensure the icon is vertically centered */
+    }
+
+    #art4 p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #art1 p,
+    #art2 p,
+    #art3 p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-link {
+        display: inline-block;
+        width: auto;
+        margin: 10px;
+        /* Default margin */
+    }
+
+    .contact-link.facebook {
+        margin-left: 20px;
+        /* Margin from the left edge */
+    }
+
+    .contact-link.gmail {
+        margin-right: 20px;
+        /* Margin from the right edge */
+    }
+
+    .contact-link.instagram {
+        margin: 0 auto;
+        /* Center align */
+        display: block;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #art1,
+    #art2,
+    #art3 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .contact-link.facebook {
+        margin-left: 60px;
+        /* Increased margin from the left edge */
+    }
+
+    .contact-link.gmail {
+        margin-right: 60px;
+        /* Increased margin from the right edge */
+    }
+
+    p {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #art4 p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .contact-link.facebook {
+        margin-left: 10%;
+    }
+
+    .contact-link.gmail {
+        margin-right: 10%;
+    }
+}
+
+#art1 p,
+#art2 p,
+#art3 p {
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
