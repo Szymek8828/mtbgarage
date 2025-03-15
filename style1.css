@@ -144,28 +144,9 @@ body {
     #art2,
     #art3,
     #art4 {
-        margin: 10px;
+        margin: 3%;
 
     }
-
-    .contact-link {
-        display: flex;
-        width: 80%;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    .contact-link ion-icon {
-        margin-right: 8px;
-        vertical-align: middle;
-        /* Ensure the icon is vertically centered */
-    }
-
-    #art4 p {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
 
 }
 
@@ -196,14 +177,6 @@ body {
 }
 
 @media (max-width:1400px) {
-
-    #art1 p,
-    #art2 p,
-    #art3 p {
-        margin-left: 0px !important;
-        margin-right: 0px !important;
-    }
-
     p {
         font-size: 16px;
     }
@@ -320,7 +293,7 @@ main {
     height: 100%;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.664);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
     text-align: center;
     margin-left: 0;
     margin-bottom: 1px;
@@ -407,7 +380,6 @@ p {
         order: -1;
         /* Move map and slider above text on smaller screens */
     }
-
 }
 
 @media (max-width: 575px) {
@@ -457,18 +429,13 @@ p {
 #art3,
 #art4 {
     color: rgb(246, 66, 57);
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    text-shadow: 2px 2px 1px black;
 
 }
 
 #art4 {
     margin-bottom: -0px;
     /* Reduce spacing between #art4 and footer */
-}
-
-#art4 h2 {
-    margin-top: -10px !important;
-    margin-bottom: 10px;
 }
 
 .custom-shadow {
@@ -492,6 +459,31 @@ p {
     text-align: center;
     margin-bottom: 20px;
     /* Adjust as needed */
+}
+
+
+#art4 h2 {
+    margin-top: -5px !important;
+    /* Adjust as needed for equal spacing */
+    margin-bottom: 15px !important;
+    /* Adjust as needed for equal spacing */
+}
+
+#art2 h2 {
+    margin-top: 10px !important;
+    /* Adjust as needed for equal spacing */
+    margin-bottom: 10px !important;
+}
+
+#art1 h2 {
+    margin-top: 10px !important;
+    /* Adjust as needed for equal spacing */
+    margin-bottom: 10px !important;
+}
+
+#art3 h2 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 }
 
 .styled-link {
@@ -562,18 +554,6 @@ p {
         vertical-align: middle;
         /* Ensure the icon is vertically centered */
     }
-
-    #art4 p {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #art1 p,
-    #art2 p,
-    #art3 p {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -605,17 +585,6 @@ p {
         justify-content: space-between;
         align-items: center;
     }
-
-    p {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    #art1,
-    #art2,
-    #art3 {
-        margin-bottom: 15px;
-    }
 }
 
 @media (min-width: 1600px) {
@@ -628,32 +597,15 @@ p {
         margin-right: 60px;
         /* Increased margin from the right edge */
     }
+}
 
+@media (max-width: 767px) {
     p {
-        margin-left: 60px;
-        margin-right: 60px;
+        text-align: left;
+        /* Change text alignment to left */
+        line-height: 1.6;
+        /* Adjust line height for better readability */
+        margin-bottom: 1em;
+        /* Add some space below paragraphs */
     }
-}
-
-@media (min-width: 1400px) {
-    #art4 p {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .contact-link.facebook {
-        margin-left: 10%;
-    }
-
-    .contact-link.gmail {
-        margin-right: 10%;
-    }
-}
-
-#art1 p,
-#art2 p,
-#art3 p {
-    margin: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
