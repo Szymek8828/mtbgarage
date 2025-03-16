@@ -82,7 +82,7 @@ body {
     text-decoration: none;
     display: block;
     font-size: 20px;
-    white-space: nowrap;
+    white-space: nowrap !important;
 }
 
 @media (min-width:768px) {
