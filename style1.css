@@ -68,6 +68,8 @@ body {
 .nav-list li {
     padding: 15px;
     list-style: none;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .nav-list a:hover {
@@ -82,7 +84,8 @@ body {
     text-decoration: none;
     display: block;
     font-size: 20px;
-    white-space: nowrap !important;
+    white-space: nowrap;
+    /* Prevent text from breaking into multiple lines */
 }
 
 @media (min-width:768px) {
