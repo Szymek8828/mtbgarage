@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         showSlide(); // Pokazujemy pierwsze zdjęcie od razu
-        setInterval(showSlide, 3500); // Zmiana co 2.5 sekundy
+        setInterval(showSlide, 4000); // Zmiana co 2.5 sekundy
     });
 
     // Add event listener to each menu item to close the menu on click
