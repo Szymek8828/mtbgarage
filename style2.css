@@ -65,7 +65,9 @@ body {
 #headingFive .accordion-button,
 #headingSix .accordion-button,
 #headingSeven .accordion-button,
-#headingEight .accordion-button {
+#headingEight .accordion-button,
+#headingNine .accordion-button,
+#headingTen .accordion-button {
     background-color: rgb(12, 12, 12);
     color: white;
     font-size: 20px;
@@ -78,7 +80,9 @@ body {
 #headingFive .accordion-button:not(.collapsed),
 #headingSix .accordion-button:not(.collapsed),
 #headingSeven .accordion-button:not(.collapsed),
-#headingEight .accordion-button:not(.collapsed) {
+#headingEight .accordion-button:not(.collapsed),
+#headingNine .accordion-button:not(.collapsed),
+#headingTen .accordion-button:not(.collapsed) {
     color: rgb(252, 72, 72);
     transition: 0.2s ease;
     text-shadow: 0px 0px 5px rgb(17, 11, 11);
@@ -92,7 +96,9 @@ body {
 #headingFive .accordion-button:hover,
 #headingSix .accordion-button:hover,
 #headingSeven .accordion-button:hover,
-#headingEight .accordion-button:hover {
+#headingEight .accordion-button:hover,
+#headingNine .accordion-button:hover,
+#headingTen .accordion-button:hover {
     background-color: rgba(0, 0, 0, 0.945);
 }
 
@@ -103,7 +109,7 @@ body {
 
 /* Change the color of the arrows to red when the button is expanded */
 .accordion-button:not(.collapsed)::after {
-    filter: invert(0) sepia(100%) saturate(10000%) hue-rotate(0deg) brightness(1400%);
+    filter: invert(0) sepia(100%) saturate(10000%) hue-rotate(6deg) brightness(1300%);
 }
 
 .accordion-body {
@@ -143,6 +149,26 @@ h2 {
     .accordion-button.collapsed {
         border-bottom: 1px solid #444;
     }
+}
+
+@media(min-width: 1400px) {
+    h2 {
+        margin-bottom: 0px !important;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .table-dark td:nth-child(2) {
+        padding-left: 50px;
+        /* Increase spacing for the price column */
+    }
+
+    .table-dark th:nth-child(2) {
+        padding-left: 50px;
+        /* Increase spacing for the header */
+    }
+
 }
 
 .table {
