@@ -24,14 +24,14 @@ document.getElementById('burger-btn').addEventListener('click', function () {
     }
 
     // Handle burger button visibility based on window width
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 900) {
         document.getElementById('burger-btn').style.display = menu.classList.contains('active') ? 'block' : 'none';
     }
 });
 
 window.addEventListener('resize', function () {
     var menu = document.querySelector('.nav-list');
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 900) {
         document.getElementById('burger-btn').style.display = menu.classList.contains('active') ? 'block' : 'none';
         if (menu.classList.contains('active')) {
             menu.classList.remove('active');
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         showSlide(); // Pokazujemy pierwsze zdjęcie od razu
-        setInterval(showSlide, 3600); // Zmiana co 2.5 sekundy
+        setInterval(showSlide, 3700); // Zmiana co 2.5 sekundy
     });
 
     // Add event listener to each menu item to close the menu on click
