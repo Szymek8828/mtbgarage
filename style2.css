@@ -158,6 +158,12 @@ h2 {
 
 }
 
+.table-dark td:nth-child(2) {
+    text-shadow: black 1px 1px 2px;
+    /* Increase spacing for the price column */
+}
+
+
 @media (max-width: 576px) {
     .table-dark td:nth-child(2) {
         padding-left: 50px;
@@ -175,4 +181,8 @@ h2 {
     flex-grow: 1 !important;
     margin-bottom: 0 !important;
     /* Usunięcie marginesu dolnego */
+}
+
+.cennikInfo {
+    margin-bottom: -40px !important;
 }
