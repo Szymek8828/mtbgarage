@@ -52,23 +52,60 @@ document.addEventListener("DOMContentLoaded", function () {
         let index = 0;
         const slides = slider.querySelectorAll("img");
         const totalSlides = slides.length;
+        let interval;
+        let isPaused = false;
+        let remainingTime = 3700; // Default interval time
+        let lastSlideTime;
 
         function showSlide() {
-            slides.forEach((slide, i) => {
-                slide.classList.remove("active");
-                if (i === index) {
-                    slide.classList.add("active");
-                }
-            });
+            if (!isPaused) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove("active");
+                    if (i === index) {
+                        slide.classList.add("active");
+                    }
+                });
 
-            index++;
-            if (index >= totalSlides) {
-                index = 0;
+                index++;
+                if (index >= totalSlides) {
+                    index = 0;
+                }
+                lastSlideTime = Date.now();
             }
         }
 
-        showSlide(); // Pokazujemy pierwsze zdjęcie od razu
-        setInterval(showSlide, 3700); // Zmiana co 2.5 sekundy
+        function startSlider(delay = remainingTime) {
+            interval = setTimeout(() => {
+                showSlide();
+                startSlider(3700); // Reset to default interval after showing the next slide
+            }, delay);
+        }
+
+        function stopSlider() {
+            clearTimeout(interval);
+            isPaused = true;
+            remainingTime = 3700 - (Date.now() - lastSlideTime); // Calculate remaining time
+        }
+
+        function resumeSlider() {
+            isPaused = false;
+            startSlider(remainingTime); // Resume with the remaining time
+        }
+
+        showSlide(); // Show the first slide immediately
+        startSlider(); // Start the slider
+
+        // Stop slider on mouse down or touch start
+        slides.forEach(slide => {
+            slide.addEventListener("mousedown", stopSlider);
+            slide.addEventListener("touchstart", stopSlider);
+        });
+
+        // Resume slider on mouse up or touch end
+        slides.forEach(slide => {
+            slide.addEventListener("mouseup", resumeSlider);
+            slide.addEventListener("touchend", resumeSlider);
+        });
     });
 
     // Add event listener to each menu item to close the menu on click
