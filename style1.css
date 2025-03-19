@@ -304,7 +304,7 @@ article {
 }
 
 main {
-    background: rgb(13,13,13);
+    background: rgb(10,10,10);
     /* Smooth gradient from header */
     margin-top: 70px;
     flex-grow: 1;
