@@ -304,7 +304,7 @@ article {
 }
 
 main {
-    background: linear-gradient(180deg, rgb(12, 12, 12), rgb(18, 18, 18));
+    background: rgb(13,13,13);
     /* Smooth gradient from header */
     margin-top: 70px;
     flex-grow: 1;
