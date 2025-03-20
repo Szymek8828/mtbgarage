@@ -1,5 +1,5 @@
 .accordion-button {
-    background-color: #333;
+    background-color: #0a0a0a !important;
     color: white;
     width: 100%;
     box-sizing: border-box;
@@ -200,4 +200,17 @@ h2 {
 .accordion-header:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+    .collapsed {
+        font-size: 18px !important;
+    }
+    .accordion-button:not(.collapsed) {
+        font-size: 18px !important;
+    }
+}
+
+h1 {
+    margin-bottom: 15px !important;
 }
