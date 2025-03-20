@@ -314,7 +314,7 @@ article {
 }
 
 main {
-    background: rgb(14, 14, 14);
+    background: rgb(18, 18, 18);
     /* Smooth gradient from header */
     margin-top: 70px;
     flex-grow: 1;
@@ -700,7 +700,7 @@ p {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     .logo {
         margin-top: 12px;
         left: -15px;
@@ -716,5 +716,24 @@ p {
     #art3,
     #art4 {
         margin-bottom: 30px !important;
+    }
+}
+
+@media (min-width:945px) {
+    #art4 p {
+        text-align: center !important;
+    }
+
+    .contact-container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        /* Add spacing between links */
+    }
+
+    .contact-link {
+        margin: 0 !important;
+        /* Remove individual margins */
     }
 }
