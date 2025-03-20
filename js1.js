@@ -44,6 +44,7 @@ window.addEventListener('resize', function () {
     } else {
         document.getElementById('burger-btn').style.display = 'block';
     }
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -97,14 +98,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Stop slider on mouse down or touch start
         slides.forEach(slide => {
-            slide.addEventListener("mousedown", stopSlider);
-            slide.addEventListener("touchstart", stopSlider);
+            slide.addEventListener("mousedown", () => {
+                stopSlider();
+            });
+            slide.addEventListener("touchstart", () => {
+                stopSlider();
+            });
         });
 
         // Resume slider on mouse up or touch end
         slides.forEach(slide => {
-            slide.addEventListener("mouseup", resumeSlider);
-            slide.addEventListener("touchend", resumeSlider);
+            slide.addEventListener("mouseup", () => {
+                resumeSlider();
+            });
+            slide.addEventListener("touchend", () => {
+                resumeSlider();
+            });
         });
     });
 
@@ -126,3 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("contextmenu", (event) => event.preventDefault());
+});
+
