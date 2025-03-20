@@ -186,3 +186,18 @@ h2 {
 .cennikInfo {
     margin-bottom: -40px !important;
 }
+
+.accordion-button,
+.accordion-item,
+.accordion-header {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+}
+
+.accordion-button:focus,
+.accordion-item:focus,
+.accordion-header:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
