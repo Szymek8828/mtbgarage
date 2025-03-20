@@ -238,7 +238,7 @@ body {
 
 @media(max-width:767px) {
     h2 {
-        scale: 0.;
+        scale: 0;
     }
 }
 
