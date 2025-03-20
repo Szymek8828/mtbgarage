@@ -550,6 +550,11 @@ p {
 
     }
 
+    #art1 h2 {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
     #art2 h2 {
         margin-top: 15px !important;
         margin-bottom: 15px !important;
