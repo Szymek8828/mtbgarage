@@ -314,7 +314,7 @@ article {
 }
 
 main {
-    background: rgb(18, 18, 18);
+    background: rgb(16, 16, 16);
     /* Smooth gradient from header */
     margin-top: 70px;
     flex-grow: 1;
@@ -539,7 +539,8 @@ p {
 }
 
 .custom-shadow {
-    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.541);
+    box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.203);
+
 
 }
 
