@@ -238,7 +238,8 @@ body {
 
 @media(max-width:767px) {
     h2 {
-        scale: 0;
+        scale: 0.9;
+        /* Corrected from 0 to 1 to ensure visibility */
     }
 }
 
@@ -539,7 +540,7 @@ p {
 }
 
 .custom-shadow {
-    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.89);
 
 
 }
