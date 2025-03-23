@@ -112,7 +112,9 @@
                             <div class="p-4 bg-dark rounded custom-shadow" id="art3">
                                 <div class="row">
                                     <div class="col-12 col-xxl-4">
-                                        <div id="map" class="slider-container"></div>
+                                        <div id="map" class="slider-container">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.178887345252!2d19.525038976933484!3d49.63208297144747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fde4b45296b07%3A0x6e84a2af889fe9f1!2sMTB%20GARAGE!5e0!3m2!1spl!2spl!4v1742702461401!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-xxl-8">
                                         <h2 class="text-center">Lokalizacja</h2>
@@ -162,58 +164,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js1.js"></script>
-    <script>
-        (g => {
-            var h, a, k, p = "The Google Maps JavaScript API",
-                c = "google",
-                l = "importLibrary",
-                q = "__ib__",
-                m = document,
-                b = window;
-            b = b[c] || (b[c] = {});
-            var d = b.maps || (b.maps = {}),
-                r = new Set,
-                e = new URLSearchParams,
-                u = () => h || (h = new Promise(async (f, n) => {
-                    await (a = m.createElement("script"));
-                    e.set("libraries", [...r] + "");
-                    for (k in g)
-                        e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
-                    e.set("callback", c + ".maps." + q);
-                    a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
-                    d[q] = f;
-                    a.onerror = () => h = n(Error(p + " could not load."));
-                    a.nonce = m.querySelector("script[nonce]")?.nonce || "";
-                    m.head.append(a)
-                }));
-            d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
-        })({
-            key: "AIzaSyA6h0s_naUWh5yL-_2Kl16vpU15R8hjckg",
-            v: "weekly",
-        });
-    </script>
-
-    <script>
-        let map;
-
-        async function initMap() {
-            const { Map } = await google.maps.importLibrary("maps");
-
-            map = new Map(document.getElementById("map"), {
-                center: { lat: 49.632015228271484, lng: 19.527568817138672 },
-                zoom: 13,
-            });
-            new google.maps.Marker({
-                position: { lat: 49.632015228271484, lng: 19.527568817138672 },
-                map: map,
-                title: "Moja Lokalizacja",
-            });
-        }
-    </script>
-
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6h0s_naUWh5yL-_2Kl16vpU15R8hjckg&callback=initMap&v=weekly">
-        </script>
 </body>
 
 </html>
