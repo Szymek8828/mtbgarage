@@ -1,6 +1,6 @@
 .accordion-button {
     background-color: #0c0c0c !important;
-    color: rgb(242, 242, 242) !important;
+    color: rgb(235, 235, 235) !important;
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -10,7 +10,7 @@
 }
 
 .accordion-item {
-    border: rgb(239, 239, 239) solid 1px !important;
+    border: #989898 solid 1px !important;
 }
 
 .accordion-button:not(.collapsed) {
