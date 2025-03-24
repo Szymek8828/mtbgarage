@@ -1,6 +1,6 @@
 .accordion-button {
     background-color: #0c0c0c !important;
-    color: rgb(239, 239, 239) !important;
+    color: rgb(242, 242, 242) !important;
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -12,6 +12,7 @@
 .accordion-item {
     border: rgb(239, 239, 239) solid 1px !important;
 }
+
 .accordion-button:not(.collapsed) {
     background-color: #444;
     color: #ffcc00;
@@ -86,7 +87,7 @@ body {
 #headingEight .accordion-button:not(.collapsed),
 #headingNine .accordion-button:not(.collapsed),
 #headingTen .accordion-button:not(.collapsed) {
-    color: rgb(252, 72, 72);
+    color: rgb(252, 72, 72) !important;
     transition: 0.2s ease;
     text-shadow: 0px 0px 5px rgb(17, 11, 11);
     background-color: rgb(0, 0, 0);
