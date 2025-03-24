@@ -134,8 +134,14 @@ document.addEventListener("DOMContentLoaded", function () {
             header.style.boxShadow = "0px 1px 2px white";
         });
     });
+
+    document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+
+            button.blur(); // Remove focus from the button after it is clicked
+        });
+    });
 });
 document.querySelectorAll("img").forEach((img) => {
     img.addEventListener("contextmenu", (event) => event.preventDefault());
 });
-
