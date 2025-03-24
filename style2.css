@@ -1,6 +1,7 @@
 .accordion-button {
-    background-color: #0c0c0c !important;
-    color: rgb(235, 235, 235) !important;
+    background-color: #131313 !important;
+    color: rgb(232, 232, 232) !important;
+    text-shadow: 1px 1px 2px black;
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -11,6 +12,7 @@
     border-top: 1px solid #bebdbd !important;
     border-left: 1px solid #bebdbd !important;
     border-right: 1px solid #bebdbd !important;
+
     z-index: 1;
 }
 
@@ -44,6 +46,7 @@ thead {
 
 .accordion-button:not(.collapsed) {
     background-color: #444;
+
     z-index: 2;
 }
 
