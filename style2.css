@@ -8,7 +8,28 @@
     font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
     z-index: 1;
+    border-top: 1px solid #bebdbd !important;
+    border-left: 1px solid #bebdbd !important;
+    border-right: 1px solid #bebdbd !important;
+    z-index: 1;
+}
 
+.accordion-item:last-child .accordion-button:last-child {
+    border-bottom: 1px solid #bebdbd !important;
+}
+
+.accordion-item:last-child .accordion-body:last-child {
+    border-bottom: 1px solid #bebdbd !important;
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+.accordion-body {
+    border-left: 1px solid #bebdbd !important;
+    border-right: 1px solid #bebdbd !important;
+    z-index: 2;
 }
 
 
@@ -72,7 +93,6 @@ body {
     background-color: rgb(12, 12, 12);
     color: white;
     font-size: 20px;
-    border-bottom: #444 1px solid !important;
 }
 
 .accordion-body {
@@ -229,4 +249,13 @@ h2 {
 
 h1 {
     margin-bottom: 15px !important;
+}
+
+button {
+    border: none !important;
+    /* Disable border for all buttons */
+    outline: none !important;
+    /* Remove focus outline */
+    box-shadow: none !important;
+    /* Remove any shadow applied */
 }
