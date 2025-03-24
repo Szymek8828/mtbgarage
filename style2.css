@@ -24,6 +24,11 @@ thead {
 
 .accordion-item:last-child .accordion-body:last-child {
     border-bottom: 1px solid #bebdbd !important;
+
+}
+
+#ostatnitd {
+    border-bottom: none;
 }
 
 .accordion-item {
