@@ -518,6 +518,7 @@ footer {
         margin-bottom: 0px !important;
     }
 
+
     #art4 {
         margin-bottom: -39px !important;
     }
@@ -644,6 +645,10 @@ p {
         margin-right: 8px;
         vertical-align: middle;
         /* Ensure the icon is vertically centered */
+    }
+
+    p {
+        font-size: 15px;
     }
 }
 
