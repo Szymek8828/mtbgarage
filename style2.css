@@ -1,6 +1,6 @@
 .accordion-button {
-    background-color: #0c0c0c !important;
-    color: white;
+    background-color: #0d0d0d !important;
+    color: rgb(225, 225, 225) !important;
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -206,6 +206,7 @@ h2 {
     .collapsed {
         font-size: 18px !important;
     }
+
     .accordion-button:not(.collapsed) {
         font-size: 18px !important;
     }
