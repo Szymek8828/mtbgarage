@@ -1,6 +1,6 @@
 .accordion-button {
     background-color: #0c0c0c !important;
-    color: rgb(239, 239, 239) !important;
+    color: rgb(230, 230, 230) !important;
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -10,7 +10,7 @@
 }
 
 .accordion-item {
-    border: #bebdbd solid 1px !important;
+    border: #959595 solid 1px !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -113,7 +113,7 @@ body {
 
 /* Change the color of the arrows to red when the button is expanded */
 .accordion-button:not(.collapsed)::after {
-    filter: invert(0) sepia(100%) saturate(10000%) hue-rotate(6deg) brightness(1300%);
+    filter: invert(0) hue-rotate(136deg) brightness(350%);
 }
 
 .accordion-body {
