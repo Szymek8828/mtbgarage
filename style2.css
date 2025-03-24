@@ -1,26 +1,24 @@
 .accordion-button {
     background-color: #0c0c0c !important;
-    color: rgb(239, 239, 239) !important;
+    color: rgb(235, 235, 235) !important;
     width: 100%;
     box-sizing: border-box;
     border: none;
     padding: 15px;
     font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1;
+
 }
 
-.accordion-item {
-    border: #bebdbd solid 1px !important;
-}
 
 .accordion-button:not(.collapsed) {
     background-color: #444;
-    color: #ffcc00;
+
 }
 
 .accordion-button:hover {
     background-color: #555;
-    color: #ffcc00;
 }
 
 .accordion-body {
@@ -50,7 +48,6 @@
 
 .table-dark th {
     background-color: #444;
-    color: #ffcc00;
 }
 
 .table-dark tr:nth-child(even) {
@@ -75,6 +72,11 @@ body {
     background-color: rgb(12, 12, 12);
     color: white;
     font-size: 20px;
+    border-bottom: #444 1px solid !important;
+}
+
+.accordion-body {
+    border-top: none !important;
 }
 
 #headingOne .accordion-button:not(.collapsed),
@@ -88,9 +90,9 @@ body {
 #headingNine .accordion-button:not(.collapsed),
 #headingTen .accordion-button:not(.collapsed) {
     color: rgb(252, 72, 72) !important;
-    transition: 0.2s ease;
     text-shadow: 0px 0px 5px rgb(17, 11, 11);
     background-color: rgb(0, 0, 0);
+
 }
 
 #headingOne .accordion-button:hover,
@@ -113,7 +115,7 @@ body {
 
 /* Change the color of the arrows to red when the button is expanded */
 .accordion-button:not(.collapsed)::after {
-    filter: invert(0) hue-rotate(136deg) brightness(350%);
+    filter: invert(0) hue-rotate(136deg) brightness(300%);
 }
 
 .accordion-body {
@@ -123,6 +125,10 @@ body {
     flex-direction: column;
 }
 
+.accordion-button:not(.collapsed)+.accordion-body .table-dark th {
+    border-top: 1px solid #444;
+    /* Add top border to match the bottom border */
+}
 
 .table-dark {
     flex-grow: 1;
@@ -133,7 +139,7 @@ h2 {
     scale: 1.0 !important;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1400px) {
     h2 {
         margin-top: 0px !important;
     }
@@ -146,19 +152,24 @@ h2 {
         border: none;
     }
 
-    .accordion-button:not(.collapsed) {
+    /* .accordion-button:not(.collapsed) {
         border-bottom: 1px solid #444;
     }
 
     .accordion-button.collapsed {
         border-bottom: 1px solid #444;
-    }
+    } */
 }
 
 @media(min-width: 1400px) {
     h2 {
         margin-bottom: 0px !important;
     }
+
+    .accordion-item {
+        border: none;
+    }
+
 
 }
 
