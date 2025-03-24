@@ -1,7 +1,7 @@
 .accordion-button {
-    background-color: #131313 !important;
-    color: rgb(232, 232, 232) !important;
-    text-shadow: 1px 1px 2px black;
+    background-color: #161616 !important;
+    color: #E0E0E0 !important;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -9,9 +9,9 @@
     font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
     z-index: 1;
-    border-top: 1px solid #bebdbd !important;
-    border-left: 1px solid #bebdbd !important;
-    border-right: 1px solid #bebdbd !important;
+    border-top: 1px solid #808080 !important;
+    border-left: 1px solid #808080 !important;
+    border-right: 1px solid #808080 !important;
 
     z-index: 1;
 }
@@ -21,11 +21,11 @@ thead {
 }
 
 .accordion-item:last-child .accordion-button:last-child {
-    border-bottom: 1px solid #bebdbd !important;
+    border-bottom: 1px solid #808080 !important;
 }
 
 .accordion-item:last-child .accordion-body:last-child {
-    border-bottom: 1px solid #bebdbd !important;
+    border-bottom: 1px solid #000000 !important;
 
 }
 
@@ -38,8 +38,8 @@ thead {
 }
 
 .accordion-body {
-    border-left: 1px solid #bebdbd !important;
-    border-right: 1px solid #bebdbd !important;
+    border-left: 1px solid #757575 !important;
+    border-right: 1px solid #757575 !important;
     z-index: 1;
 }
 
@@ -104,7 +104,7 @@ body {
 #headingTen .accordion-button {
     background-color: rgb(12, 12, 12);
     color: white;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .accordion-body {
@@ -121,10 +121,9 @@ body {
 #headingEight .accordion-button:not(.collapsed),
 #headingNine .accordion-button:not(.collapsed),
 #headingTen .accordion-button:not(.collapsed) {
-    color: rgb(252, 72, 72) !important;
-    text-shadow: 0px 0px 5px rgb(17, 11, 11);
+    color: rgb(252, 77, 61) !important;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
-
 
 }
 
@@ -185,13 +184,12 @@ h2 {
         border: none;
     }
 
-    /* .accordion-button:not(.collapsed) {
-        border-bottom: 1px solid #444;
+    .accordion-button {
+        font-size: 17px !important;
     }
 
-    .accordion-button.collapsed {
-        border-bottom: 1px solid #444;
-    } */
+
+
 }
 
 @media(min-width: 1400px) {
@@ -233,6 +231,11 @@ h2 {
 
 .cennikInfo {
     margin-bottom: -70px !important;
+
+}
+
+.cennikInfo p {
+    color: #dfdfdf;
 }
 
 .accordion-button,
@@ -252,16 +255,35 @@ h2 {
 
 @media (max-width: 768px) {
     .collapsed {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
 
     .accordion-button:not(.collapsed) {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
+
+    p {
+        font-size: 15px;
+    }
+
+    h1 {
+        scale: 0.9;
+    }
+
+    tbody {
+        font-size: 14px;
+    }
+
+    thead {
+        font-size: 15px;
+    }
+
 }
 
 h1 {
     margin-bottom: 15px !important;
+    color: #dbdada !important;
+    text-shadow: 1px 1px 1px black;
 }
 
 button {
