@@ -1,5 +1,5 @@
 .accordion-button {
-   background-color: #222222 !important;
+    background-color: #282828 !important;
     color: #E0E0E0 !important;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     width: 100%;
@@ -235,7 +235,7 @@ h2 {
 }
 
 .cennikInfo p {
-    color: #dfdfdf;
+    color: #E0E0E0;
 }
 
 .accordion-button,
@@ -282,7 +282,7 @@ h2 {
 
 h1 {
     margin-bottom: 15px !important;
-    color: #dbdada !important;
+    color: #F5F5F5 !important;
     text-shadow: 1px 1px 1px black;
 }
 
