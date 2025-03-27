@@ -421,9 +421,9 @@ main {
 .ikonaMenu,
 .ikona2Menu {
     position: fixed;
-    top: 10px;
+    top: 15px;
     right: 10px;
-    height: 60px;
+    height: 50px;
     width: 60px;
     color: white;
     z-index: 4;
@@ -522,6 +522,7 @@ footer {
     #art4 {
         margin-bottom: -39px !important;
     }
+
 }
 
 p {
@@ -544,7 +545,7 @@ p {
 }
 
 .custom-shadow {
-    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px rgb(153, 153, 153);
 
 
 }
@@ -649,6 +650,15 @@ p {
 
     p {
         font-size: 15px;
+    }
+    header{
+        height:70px !important;
+    }
+    .logo{
+        top: -15px !important;;
+    }
+    .ikonaMenu, .ikona2Menu{
+        top:10px;
     }
 }
 
