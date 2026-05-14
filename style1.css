@@ -635,8 +635,7 @@ p {
 }
 
 .contact-link.gmail {
-    background-color: #D44638;
-    background-image: linear-gradient(45deg, #D44638, #FF6F61);
+    background: linear-gradient(45deg, #0695FF, #A334FA, #FF6968);
 }
 
 .contact-link ion-icon {
